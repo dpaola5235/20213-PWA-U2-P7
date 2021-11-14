@@ -32,7 +32,7 @@ class Camera{
     }
 
     onBack(){
-        if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
+        if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia()){
             this.off();
             return navigator.mediaDevices.getUserMedia({
                 audio:false,
